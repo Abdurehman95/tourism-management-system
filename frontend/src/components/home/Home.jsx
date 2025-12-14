@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from './common/Header';
 import Footer from './common/Footer';
 import Features from './sections/Features';
+import Destinations from './sections/Destinations';
 import Contact from './sections/Contact';
 import WebsiteAssistant from './common/WebsiteAssistant';
 import { useLanguage } from '../../context/LanguageContext';
@@ -255,6 +256,7 @@ function Home() {
         </div>
       </section>
 
+      <Destinations />
       <Features />
       <Contact />
       <Footer />
