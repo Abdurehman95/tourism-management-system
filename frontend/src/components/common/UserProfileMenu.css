@@ -1,0 +1,132 @@
+.user-menu-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.avatar-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #e2e8f0;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.avatar-btn:hover {
+    border-color: #3b82f6;
+    transform: scale(1.05);
+}
+
+.avatar-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-placeholder {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.user-menu-dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    width: 240px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+    padding: 8px 0;
+    text-align: left;
+    animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-info {
+    padding: 12px 20px;
+}
+
+.user-name {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.profile-link {
+    font-size: 0.85rem;
+    color: #3b82f6;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+}
+
+.nav-divider {
+    height: 1px;
+    background: #e2e8f0;
+    border: none;
+    margin: 4px 0;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-items li {
+    display: block;
+}
+
+.menu-items a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    color: #475569;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background 0.1s, color 0.1s;
+}
+
+.menu-items a:hover {
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+.menu-items a .icon {
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+    color: #94a3b8;
+}
+
+.menu-items a:hover .icon {
+    color: #3b82f6;
+}

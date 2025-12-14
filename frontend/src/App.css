@@ -1,0 +1,116 @@
+/* Main App Styles */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.App {
+    width: 100%;
+    height: auto;
+}
+
+/* Infinite Scroll Animation - Vertical Top to Bottom */
+@keyframes scroll-vertical {
+    0% {
+        transform: translateY(calc(-250px * 5));
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slider {
+    background: transparent;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to bottom, var(--bg-primary) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+}
+
+.slider::before {
+    top: 0;
+}
+
+.slider::after {
+    bottom: 0;
+    transform: rotateZ(180deg);
+}
+
+.slide-track {
+    animation: scroll-vertical 20s linear infinite;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(250px * 10);
+}
+
+.slide {
+    height: 250px;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.slide img:hover {
+    transform: scale(1.03);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .slider {
+        height: 400px;
+    }
+
+    .slide {
+        height: 200px;
+    }
+
+    @keyframes scroll-vertical {
+        0% {
+            transform: translateY(calc(-200px * 5));
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .slide-track {
+        height: calc(200px * 10);
+    }
+
+    .slider::before,
+    .slider::after {
+        height: 50px;
+    }
+}

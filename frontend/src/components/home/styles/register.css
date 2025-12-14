@@ -1,0 +1,257 @@
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+          background-color: var(--bg-primary);
+          font-family: "Poppins", sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 40px 20px;
+      }
+
+      .register-container {
+          background-color: var(--bg-secondary);
+          border-radius: 12px;
+          box-shadow: var(--card-shadow);
+          width: 100%;
+          max-width: 480px;
+          padding: 30px;
+      }
+
+      .logo {
+          text-align: center;
+          margin-bottom: 15px;
+      }
+
+      .logo h1 {
+          color: var(--accent-primary);
+          font-size: 20px;
+          margin-bottom: 3px;
+      }
+
+      .logo p {
+          color: var(--text-secondary);
+          font-size: 13px;
+      }
+
+      .register-box h2 {
+          text-align: center;
+          color: var(--text-primary);
+          margin-bottom: 15px;
+          font-size: 18px;
+      }
+
+
+      .form-group {
+          margin-bottom: 15px;
+      }
+
+      .form-group label {
+          display: block;
+          margin-bottom: 8px;
+          color: #555;
+          font-weight: 500;
+          font-size: 14px;
+      }
+
+      .form-group input {
+          width: 100%;
+          padding: 10px 14px;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          font-size: 15px;
+      }
+
+      .form-group input:focus {
+          border-color: #1a2a6c;
+          box-shadow: 0 0 0 2px rgba(26, 42, 108, 0.2);
+          outline: none;
+      }
+
+      .name-group,
+      .form-row {
+          display: flex;
+          gap: 12px;
+      }
+
+      .name-group .form-group,
+      .form-row .form-group {
+          flex: 1;
+          margin-bottom: 15px;
+      }
+
+      button[type="submit"] {
+          width: 100%;
+          padding: 12px;
+          background: var(--accent-primary);
+          color: white;
+          border: none;
+          border-radius: 8px;
+          font-size: 15px;
+          font-weight: 600;
+          cursor: pointer;
+          margin-top: 5px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      button[type="submit"]:hover {
+          background: var(--accent-secondary);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .login-link {
+          text-align: center;
+          margin-top: 25px;
+          padding-top: 20px;
+          border-top: 1px solid #eee;
+      }
+
+      .login-link a {
+          color: #1a2a6c;
+          font-weight: 600;
+          text-decoration: none;
+      }
+
+      .login-link a:hover {
+          text-decoration: underline;
+      }
+
+      .password-wrapper {
+          position: relative;
+      }
+
+      .password-icon {
+          position: absolute;
+          right: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+          font-size: 18px;
+          user-select: none;
+      }
+
+      /* Mobile First Responsive Design */
+      @media (max-width: 480px) {
+          .register-container {
+              padding: 30px 20px;
+              margin: 10px;
+          }
+
+          .logo h1 {
+              font-size: 22px;
+          }
+
+          .logo p {
+              font-size: 14px;
+          }
+
+          .register-box h2 {
+              font-size: 20px;
+          }
+
+          .form-group input {
+              padding: 10px 12px;
+              font-size: 15px;
+          }
+
+          button[type="submit"] {
+              padding: 12px;
+              font-size: 15px;
+          }
+
+          .name-group {
+              flex-direction: column;
+              gap: 0;
+          }
+      }
+
+      @media (max-width: 320px) {
+          .register-container {
+              padding: 20px 15px;
+          }
+
+          .logo h1 {
+              font-size: 20px;
+          }
+
+          .logo p {
+              font-size: 13px;
+          }
+
+          .register-box h2 {
+              font-size: 18px;
+              margin-bottom: 20px;
+          }
+
+          .form-group {
+              margin-bottom: 15px;
+          }
+
+          .form-group input {
+              padding: 8px 10px;
+              font-size: 14px;
+          }
+
+          button[type="submit"] {
+              padding: 10px;
+              font-size: 14px;
+          }
+
+          .login-link {
+              font-size: 13px;
+          }
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+          .register-container {
+              max-width: 550px;
+              padding: 50px;
+          }
+
+          .logo h1 {
+              font-size: 32px;
+          }
+
+          .logo p {
+              font-size: 18px;
+          }
+      }
+
+      @media (min-width: 1200px) {
+          .register-container {
+              max-width: 550px;
+          }
+      }
+
+      @media (max-height: 600px) and (orientation: landscape) {
+          body {
+              padding: 10px 0;
+              align-items: flex-start;
+          }
+
+          .register-container {
+              margin: 20px 0;
+              max-height: 90vh;
+              overflow-y: auto;
+          }
+
+          .logo {
+              margin-bottom: 20px;
+          }
+
+          .form-group {
+              margin-bottom: 15px;
+          }
+      }
+
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+          .register-container {
+              box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+          }
+      }
