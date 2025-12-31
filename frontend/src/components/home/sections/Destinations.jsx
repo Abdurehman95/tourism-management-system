@@ -6,34 +6,34 @@ function Destinations() {
 
   const destinations = [
     {
-      title: "Addis Ababa and Its Surroundings",
+      title: t('dest_1_title'),
       image: "/image/c2.avif",
-      description: "Experience the vibrant heart of Ethiopia, blending modern city life with deep rooted history."
+      description: t('dest_1_desc')
     },
     {
-      title: "Eastern Ethiopia and the Bale Mountains",
+      title: t('dest_2_title'),
       image: "/image/bale.jpg",
-      description: "Discover the spectacular landscapes and endemic wildlife of the Bale Mountains."
+      description: t('dest_2_desc')
     },
     {
-      title: "The Afar Triangle",
+      title: t('dest_3_title'),
       image: "/image/c5.jpg",
-      description: "Journey into one of the hottest places on Earth, home to active volcanoes and salt flats."
+      description: t('dest_3_desc')
     },
     {
-      title: "Authentic Ethiopian cuisine served on injera with rich, spicy flavors",
+      title: t('dest_4_title'),
       image: "/image/c1.avif",
-      description: "Experience authentic Ethiopian food—bold flavors, traditional injera, and a unique shared dining culture."
+      description: t('dest_4_desc')
     },
     {
-      title: "The Rift Valley and the Cultural Mosaic of the South",
+      title: t('dest_5_title'),
       image: "/image/c3.avif",
-      description: "Immerse yourself in the diverse cultures and traditions of the Southern Nations."
+      description: t('dest_5_desc')
     },
     {
-      title: "Western Ethiopia – Renowned for Lush Nature and Coffee",
+      title: t('dest_6_title'),
       image: "/image/c6.avif",
-      description: "Visit the birthplace of coffee and explore the lush green landscapes of the west."
+      description: t('dest_6_desc')
     }
   ];
 
@@ -60,7 +60,7 @@ function Destinations() {
             textTransform: 'uppercase',
             marginBottom: '20px',
             opacity: 0.9
-          }}>Discover</span>
+          }}>{t('dest_badge')}</span>
           <h2 style={{
             fontSize: 'clamp(2rem, 4vw, 2.5rem)',
             fontWeight: 700,
@@ -68,7 +68,7 @@ function Destinations() {
             marginBottom: '20px',
             lineHeight: 1.3
           }}>
-            Explore Ethiopia
+            {t('dest_title')}
           </h2>
           <p style={{
             color: 'var(--text-secondary)',
@@ -77,7 +77,7 @@ function Destinations() {
             margin: '0 auto',
             lineHeight: 1.7
           }}>
-            From ancient historical sites to breathtaking natural landscapes, discover the diverse regions of Ethiopia.
+            {t('dest_desc')}
           </p>
         </div>
 

@@ -65,6 +65,7 @@ CREATE TABLE Sites (
     category_id INT,
     region_id INT,
     created_by INT, -- researcher/admin who created
+    status ENUM('pending', 'approved', 'rejected') DEFAULT 'pending',
     is_approved BOOLEAN DEFAULT FALSE,
     approved_by INT, -- admin who approved
     approved_at TIMESTAMP NULL,

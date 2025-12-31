@@ -13,7 +13,6 @@ const WebsiteAssistant = () => {
   const chatContainerRef = useRef(null);
 
   const suggestedTopics = [
-    { icon: "🍽️", text: "Food & injera" },
     { icon: "🎉", text: "Festivals & culture" },
     { icon: "🏰", text: "Historical sites" },
     { icon: "🚌", text: "Transport info" }
@@ -120,7 +119,7 @@ const WebsiteAssistant = () => {
                 <img src={botAvatar} alt="Bot Profile" />
               </div>
               <div className="header-info">
-                <h3>VisitEthiopia Bot</h3>
+                <h3>Tourism Assistant Bot</h3>
                 <div className="header-status">
                   <span className="status-dot"></span>
                   Explore Ethiopia in chat

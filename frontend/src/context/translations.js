@@ -2,6 +2,7 @@ export const translations = {
     en: {
         // Header
         nav_home: "Home",
+        nav_discover: "Discover",
         nav_about: "About",
         nav_feature: "Feature",
         nav_contact: "Contact",
@@ -39,6 +40,29 @@ export const translations = {
         f_content_desc: "Access verified historical information curated by tourism experts.",
         f_book_title: "Easy Booking",
         f_book_desc: "Seamless booking experience with real-time availability.",
+
+        // Destinations
+        dest_badge: "Discover",
+        dest_title: "Explore Ethiopia",
+        dest_desc: "From ancient historical sites to breathtaking natural landscapes, discover the diverse regions of Ethiopia.",
+
+        dest_1_title: "Addis Ababa and Its Surroundings",
+        dest_1_desc: "Experience the vibrant heart of Ethiopia, blending modern city life with deep rooted history.",
+
+        dest_2_title: "Eastern Ethiopia and the Bale Mountains",
+        dest_2_desc: "Discover the spectacular landscapes and endemic wildlife of the Bale Mountains.",
+
+        dest_3_title: "The Afar Triangle",
+        dest_3_desc: "Journey into one of the hottest places on Earth, home to active volcanoes and salt flats.",
+
+        dest_4_title: "Authentic Ethiopian cuisine served on injera with rich, spicy flavors",
+        dest_4_desc: "Experience authentic Ethiopian food—bold flavors, traditional injera, and a unique shared dining culture.",
+
+        dest_5_title: "The Rift Valley and the Cultural Mosaic of the South",
+        dest_5_desc: "Immerse yourself in the diverse cultures and traditions of the Southern Nations.",
+
+        dest_6_title: "Western Ethiopia – Renowned for Lush Nature and Coffee",
+        dest_6_desc: "Visit the birthplace of coffee and explore the lush green landscapes of the west.",
 
         // Contact
         contact_title: "Sends us a Message",
@@ -310,6 +334,7 @@ export const translations = {
         // ... (keeping existing translation lines implicitly, just ensuring context for replacement)
         // Header
         nav_home: "መነሻ",
+        nav_discover: "አግኝ",
         nav_about: "ስለ እኛ",
         nav_feature: "ባህሪያት",
         nav_contact: "እውቂያ",
@@ -348,6 +373,29 @@ export const translations = {
         f_content_desc: "በቱሪዝም ባለሙያዎች የተዘጋጀ የተረጋገጠ ታሪካዊ መረጃ ያግኙ።",
         f_book_title: "ቀላል ምዝገባ",
         f_book_desc: "በእውነተኛ ጊዜ ተገኝነት እና ፈጣን ማረጋገጫ ቀላል የቦታ ማስያዝ ተሞክሮ።",
+
+        // Destinations
+        dest_badge: "አግኝ",
+        dest_title: "ኢትዮጵያን ያስሱ",
+        dest_desc: "ከጥንታዊ ታሪካዊ ቦታዎች እስከ አስደናቂ የተፈጥሮ መልክአ ምድሮች፣ የተለያዩ የኢትዮጵያ ክልሎችን ያስሱ።",
+
+        dest_1_title: "አዲስ አበባ እና አካባቢዋ",
+        dest_1_desc: "ዘመናዊ የከተማ ህይወትን ከጥልቅ መሰረት ካለው ታሪክ ጋር የሚያዋህደውን የኢትዮጵያ ንቁ ልብ ይለማመዱ።",
+
+        dest_2_title: "ምስራቅ ኢትዮጵያ እና የባሌ ተራሮች",
+        dest_2_desc: "የባሌ ተራሮችን አስደናቂ መልክአ ምድሮች እና የአገር በቀል የዱር እንስሳትን ያግኙ።",
+
+        dest_3_title: "የአፋር ትሪያንግል",
+        dest_3_desc: "ገባሪ የእሳተ ገሞራዎች እና የጨው ሜዳዎች መኖሪያ ወደ ሆነው በምድር ላይ ካሉት በጣም ሞቃታማ ቦታዎች ወደ አንዱ ይጓዙ።",
+
+        dest_4_title: "በእንጀራ ላይ የቀረበ ትክክለኛ የኢትዮጵያ ምግብ ከበለጸጉ ቅመሞች ጋር",
+        dest_4_desc: "ትክክለኛ የኢትዮጵያ ምግብን ይለማመዱ—ደማቅ ጣዕሞች፣ ባህላዊ እንጀራ እና ልዩ የጋራ የመመገቢያ ባህል።",
+
+        dest_5_title: "የ rift ሸለቆ እና የደቡብ ባህላዊ ሞዛይክ",
+        dest_5_desc: "ራሳችሁን በደቡብ ብሔር ብሔረሰቦች የተለያዩ ባህሎች እና ወጎች ውስጥ አስገቡ።",
+
+        dest_6_title: "ምዕራብ ኢትዮጵያ - በለምለሙ ተፈጥሮ እና ቡና የታወቀች",
+        dest_6_desc: "የቡና መገኛን ይጎብኙ እና የምዕራቡን ለምለም አረንጓዴ መልክአ ምድሮች ያስሱ።",
 
         // Contact
         contact_title: "መልእክት ይላኩልን",

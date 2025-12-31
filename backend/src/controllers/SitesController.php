@@ -385,20 +385,23 @@ class SitesController
                 }
             }
 
-            // Handle status field for rejection
-            if (isset($input['status'])) {
+            // Fetch actual columns to ensure we don't try to update non-existent ones
+            $columns = $this->siteColumns($table);
+
+            // Handle status field for rejection or updates
+            if (isset($input['status']) && in_array('status', $columns, true)) {
                 $updates[] = "`status` = :status";
                 $params['status'] = $input['status'];
             }
 
             // Handle is_approved field
-            if (isset($input['is_approved'])) {
+            if (isset($input['is_approved']) && in_array('is_approved', $columns, true)) {
                 $updates[] = "`is_approved` = :is_approved";
                 $params['is_approved'] = $input['is_approved'] ? 1 : 0;
             }
 
             // Only reset approval on update if it's a researcher editing (not admin status change)
-            if (!isset($input['status']) && !isset($input['is_approved'])) {
+            if (!isset($input['status']) && !isset($input['is_approved']) && in_array('is_approved', $columns, true)) {
                 $updates[] = "is_approved = 0";
             }
 

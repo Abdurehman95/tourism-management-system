@@ -64,6 +64,7 @@ function Header() {
 
         <nav className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
           <a href="#home" onClick={closeMobileMenu}>{t('nav_home')}</a>
+          <a href="#destinations" onClick={closeMobileMenu}>{t('nav_discover')}</a>
           <a href="#about" onClick={closeMobileMenu}>{t('nav_about')}</a>
           <a href="#feature" onClick={closeMobileMenu}>{t('nav_feature')}</a>
           <a href="#contact" onClick={closeMobileMenu}>{t('nav_contact')}</a>

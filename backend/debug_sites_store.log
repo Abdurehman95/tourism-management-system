@@ -402,3 +402,20 @@ Body: Array
     [is_approved] => 
 )
 
+[2025-12-15 19:54:58] Auth: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjcsInJvbGUiOiJyZXNlYXJjaGVyIiwiZW1haWwiOiJhc2FkQGdtYWlsLmNvbSIsImlhdCI6MTc2NTgyNDgxOCwiZXhwIjoxNzY2NDI5NjE4fQ.T8nxQjlIKJw8kqWc546pkuhEJAGDfdMTYcVaReMH-6M
+Body: Array
+(
+    [site_name] => axsum
+    [location] => ethiopia
+    [description] => the hisrinic site 
+    [price] => 2345
+    [image] => 
+    [category] => Historical Site
+    [region] => sdfg
+    [visit_duration] => 7
+    [nearby_attractions] => 
+    [map_url] => 
+    [researcher_id] => 7
+    [is_approved] => 
+)
+
